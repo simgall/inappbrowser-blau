@@ -502,16 +502,22 @@
     self.webView.scalesPageToFit = NO;
     self.webView.userInteractionEnabled = YES;
 
-    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGrayLarge];
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     self.spinner.alpha = 1.000;
     self.spinner.autoresizesSubviews = YES;
     self.spinner.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
+    
+    // custom addition by Visual Harmony on 8/6/2015 - attempt to change spinner color
+    self.spinner.color = [UIColor blueColor];
+    
     self.spinner.clearsContextBeforeDrawing = NO;
     self.spinner.clipsToBounds = NO;
     self.spinner.contentMode = UIViewContentModeScaleToFill;
-  
-    self.spinner.frame = CGRectMake(454.0, 231.0, 20.0, 20.0);
-
+    self.spinner.frame = CGRectMake(200.0, 200.0, 20.0, 20.0);
+    
+    // custom addition by Visual Harmony on 8/6/2015 - attempt to center the spinner
+    self.spinner.center = self.view.center;
+    
     self.spinner.hidden = YES;
     self.spinner.hidesWhenStopped = YES;
     self.spinner.multipleTouchEnabled = NO;
