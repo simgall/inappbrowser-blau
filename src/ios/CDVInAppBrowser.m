@@ -509,7 +509,15 @@
     self.spinner.clearsContextBeforeDrawing = NO;
     self.spinner.clipsToBounds = NO;
     self.spinner.contentMode = UIViewContentModeScaleToFill;
+  
+if([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) {
+    //portrait
     self.spinner.frame = CGRectMake(self.view.frame.size.width / 2 - 10, self.view.frame.size.height/ 2 - 10, 20, 20);
+} else {
+    //landscape
+    self.spinner.frame = CGRectMake(self.view.frame.size.height / 2 - 10, self.view.frame.size.width/ 2 - 10, 20, 20);
+}
+
     self.spinner.hidden = YES;
     self.spinner.hidesWhenStopped = YES;
     self.spinner.multipleTouchEnabled = NO;
