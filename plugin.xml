@@ -20,7 +20,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
            id="com.cordova.plugin.inappbrowser.with.loading.spinner"
-      version="1.0.7">
+      version="1.0.8">
 
     <name>InAppBrowser with Loading Spinner</name>
     <description>Cordova InAppBrowser Plugin with Loading Spinner</description>
