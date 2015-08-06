@@ -502,7 +502,7 @@
     self.webView.scalesPageToFit = NO;
     self.webView.userInteractionEnabled = YES;
 
-    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGrayLarge];
     self.spinner.alpha = 1.000;
     self.spinner.autoresizesSubviews = YES;
     self.spinner.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin;
@@ -510,13 +510,7 @@
     self.spinner.clipsToBounds = NO;
     self.spinner.contentMode = UIViewContentModeScaleToFill;
   
-if([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) {
-    //portrait
-    self.spinner.frame = CGRectMake(self.view.frame.size.width / 2 - 10, self.view.frame.size.height/ 2 - 10, 20, 20);
-} else {
-    //landscape
-    self.spinner.frame = CGRectMake(self.view.frame.size.height / 2 - 10, self.view.frame.size.width/ 2 - 10, 20, 20);
-}
+    self.spinner.frame = CGRectMake(454.0, 231.0, 20.0, 20.0);
 
     self.spinner.hidden = YES;
     self.spinner.hidesWhenStopped = YES;
