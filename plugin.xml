@@ -22,8 +22,8 @@
            id="com.cordova.plugin.inappbrowser.with.loading.spinner"
       version="1.0.1">
 
-    <name>InAppBrowser</name>
-    <description>Cordova InAppBrowser Plugin</description>
+    <name>InAppBrowser with Loading Spinner</name>
+    <description>Cordova InAppBrowser Plugin with Loading Spinner</description>
     <license>Apache 2.0</license>
     <keywords>cordova,in,app,browser,inappbrowser</keywords>
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git</repo>
