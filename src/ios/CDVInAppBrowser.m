@@ -513,7 +513,7 @@
     self.spinner.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
     
     // custom addition by Visual Harmony on 8/6/2015 - attempt to change spinner color
-    self.spinner.color = [UIColor blueColor];
+    self.spinner.color = [UIColor greenColor];
     
     self.spinner.clearsContextBeforeDrawing = NO;
     self.spinner.clipsToBounds = NO;
