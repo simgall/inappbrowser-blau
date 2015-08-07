@@ -505,7 +505,7 @@
 
 
 
-    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     self.spinner.alpha = 1.000;
     self.spinner.autoresizesSubviews = YES;
     
@@ -521,7 +521,7 @@
     self.spinner.frame = CGRectMake(200.0, 200.0, 20.0, 20.0);
     
     // custom addition by Visual Harmony on 8/6/2015 - attempt to center the spinner
-    self.spinner.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2.0, [UIScreen mainScreen].bounds.size.height/2.0);
+    self.spinner.center = self.view.center;
     
     self.spinner.hidden = YES;
     self.spinner.hidesWhenStopped = YES;
