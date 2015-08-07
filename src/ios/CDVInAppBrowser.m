@@ -513,17 +513,14 @@
     self.spinner.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin;
     
     // custom addition by Visual Harmony on 8/6/2015 - attempt to change spinner color
-    self.spinner.color = [UIColor redColor];
+    self.spinner.color = [UIColor blueColor];
     
     self.spinner.clearsContextBeforeDrawing = NO;
     self.spinner.clipsToBounds = NO;
     self.spinner.contentMode = UIViewContentModeScaleToFill;
     
     // attempt to fix centering issues
-    self.spinner.frame = CGRectMake(self.view.frame.size.width / 2 - 20, self.view.frame.size.height/ 2 - 20, 40, 40);
-        
-    // custom addition by Visual Harmony on 8/6/2015 - attempt to center the spinner
-    // MIGHT NOT BE NEEDED: self.spinner.center = self.view.center;
+    self.spinner.frame = CGRectMake(self.view.frame.size.width / 2 - 10, self.view.frame.size.height/ 2 - 10, 20, 20);
     
     self.spinner.hidden = YES;
     self.spinner.hidesWhenStopped = YES;
