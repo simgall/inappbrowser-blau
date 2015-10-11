@@ -584,18 +584,18 @@
     self.addressLabel.numberOfLines = 1;
     self.addressLabel.opaque = NO;
     self.addressLabel.shadowOffset = CGSizeMake(0.0, -1.0);
-    self.addressLabel.text = NSLocalizedString(@"Loading...", nil);
+    self.addressLabel.text = NSLocalizedString(@"Laden...", nil);
     self.addressLabel.textAlignment = NSTextAlignmentLeft;
     self.addressLabel.textColor = [UIColor colorWithWhite:1.000 alpha:1.000];
     self.addressLabel.userInteractionEnabled = NO;
 
-    NSString* frontArrowString = NSLocalizedString(@">", nil); // create arrow from Unicode char
+    NSString* frontArrowString = NSLocalizedString(@"> ", nil); // create arrow from Unicode char
     self.forwardButton = [[UIBarButtonItem alloc] initWithTitle:frontArrowString style:UIBarButtonItemStylePlain target:self action:@selector(goForward:)];
     self.forwardButton.enabled = YES;
     self.forwardButton.imageInsets = UIEdgeInsetsZero;
     self.forwardButton.tintColor = [UIColor colorWithRed:236.0 / 255.0 green:144.0 / 255.0 blue:55.0 / 255.0 alpha:1];
 
-    NSString* backArrowString = NSLocalizedString(@"<", nil); // create arrow from Unicode char
+    NSString* backArrowString = NSLocalizedString(@"< ", nil); // create arrow from Unicode char
     self.backButton = [[UIBarButtonItem alloc] initWithTitle:backArrowString style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
     self.backButton.enabled = YES;
     self.backButton.imageInsets = UIEdgeInsetsZero;
