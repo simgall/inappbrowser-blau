@@ -19,10 +19,10 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="com.cordova.plugin.inappbrowser.blau" version="1.0.4">
+           id="com.cordova.plugin.inappbrowser.blau" version="1.0.0">
 
-    <name>InAppBrowser Orange</name>
-    <description>Cordova InAppBrowser Plugin with Orange Buttons</description>
+    <name>InAppBrowser Blue</name>
+    <description>Cordova InAppBrowser Plugin with Blue Buttons</description>
     <license>Apache 2.0</license>
     <keywords>cordova,in,app,browser,inappbrowser</keywords>
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git</repo>
