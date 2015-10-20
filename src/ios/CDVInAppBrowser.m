@@ -593,13 +593,13 @@
     self.forwardButton = [[UIBarButtonItem alloc] initWithTitle:frontArrowString style:UIBarButtonItemStylePlain target:self action:@selector(goForward:)];
     self.forwardButton.enabled = YES;
     self.forwardButton.imageInsets = UIEdgeInsetsZero;
-    self.forwardButton.tintColor = [UIColor colorWithRed:236.0 / 255.0 green:144.0 / 255.0 blue:55.0 / 255.0 alpha:1];
+    self.forwardButton.tintColor = [UIColor colorWithRed:30.0 / 255.0 green:106.0 / 255.0 blue:179.0 / 255.0 alpha:1];
 
     NSString* backArrowString = NSLocalizedString(@"< ", nil); // create arrow from Unicode char
     self.backButton = [[UIBarButtonItem alloc] initWithTitle:backArrowString style:UIBarButtonItemStylePlain target:self action:@selector(goBack:)];
     self.backButton.enabled = YES;
     self.backButton.imageInsets = UIEdgeInsetsZero;
-    self.backButton.tintColor = [UIColor colorWithRed:236.0 / 255.0 green:144.0 / 255.0 blue:55.0 / 255.0 alpha:1];
+    self.backButton.tintColor = [UIColor colorWithRed:30.0 / 255.0 green:106.0 / 255.0 blue:179.0 / 255.0 alpha:1];
 
     [self.toolbar setItems:@[self.closeButton, flexibleSpaceButton, self.backButton, fixedSpaceButton, self.forwardButton]];
 
@@ -621,7 +621,7 @@
     self.closeButton = nil;
     self.closeButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleBordered target:self action:@selector(close)];
     self.closeButton.enabled = YES;
-    self.closeButton.tintColor = [UIColor colorWithRed:236.0 / 255.0 green:144.0 / 255.0 blue:55.0 / 255.0 alpha:1];
+    self.closeButton.tintColor = [UIColor colorWithRed:30.0 / 255.0 green:106.0 / 255.0 blue:179.0 / 255.0 alpha:1];
 
     NSMutableArray* items = [self.toolbar.items mutableCopy];
     [items replaceObjectAtIndex:0 withObject:self.closeButton];
